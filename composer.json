@@ -1,14 +1,14 @@
 {
     "name": "webtamizhan/ltrans",
     "description": "Manage translation on laravel application",
-    "type": "library, composer-plugin",
+    "type": "library",
     "authors": [
         {
             "name": "Prabakaran T",
             "email": "mailtodecipher@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "dev-master",
     "require": {
         "php": "^7.1"
     },
