@@ -67,7 +67,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach(\Kalamsoft\Langman\Lman::langOption() as $lang)
+                            @foreach($languages as $lang)
                                 <tr>
                                     <td>  {{  $lang['name'] }}   </td>
                                     <td> {{  $lang['folder'] }} </td>

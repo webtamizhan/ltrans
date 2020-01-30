@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Session;
-use Illuminate\Support\Facades\Validator; 
+use Illuminate\Support\Facades\Validator;
 
 class LanguageController extends Controller
 {
@@ -58,7 +58,9 @@ class LanguageController extends Controller
             $template = 'edit';
         } else {
             $template = 'index';
-            $this->data = [];
+            $this->data = [
+                "languages" => $this->langOption()
+            ];
         }
         return view('vendor.translations.'.$this->style.'.'.$template,$this->data);
     }
@@ -184,11 +186,9 @@ class LanguageController extends Controller
     {
         $path = base_path() . '/resources/lang/';
         $lang = scandir($path);
+        $files = array_diff($lang, array('.', '..','vendor'));
         $t = array();
-        foreach ($lang as $value) {
-            if ($value === '.' || $value === '..' || $value == "vendor") {
-                continue;
-            }
+        foreach ($files as $value) {
             if (is_dir($path . $value)) {
                 $fp = file_get_contents($path . $value . '/config.json');
                 $fp = json_decode($fp, true);
