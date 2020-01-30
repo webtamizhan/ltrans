@@ -1,0 +1,27 @@
+{
+    "name": "webtamizhan/ltrans",
+    "description": "Manage translation on laravel application",
+    "type": "library, composer-plugin",
+    "authors": [
+        {
+            "name": "Prabakaran T",
+            "email": "mailtodecipher@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webtamizhan\\Ltrans\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "webtamizhan\\ltrans\\LtranslationServiceProvider.php"
+            ]
+        }
+    }
+}
