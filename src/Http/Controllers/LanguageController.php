@@ -1,13 +1,12 @@
 <?php
 
-namespace Kalamsoft\Langman\Http\Controllers;
+namespace Webtamizhan\Ltrans\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Session;
-use Illuminate\Support\Facades\Validator;
-use Kalamsoft\Langman\Lman;
+use Illuminate\Support\Facades\Validator; 
 
 class LanguageController extends Controller
 {
