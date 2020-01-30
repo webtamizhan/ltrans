@@ -17,7 +17,7 @@ class LtranslationServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/views' => base_path('resources/views/vendor/translations'),
             __DIR__ . '/en/config.json' => base_path('resources/lang/en/config.json'),
-            __DIR__.'/config/translation.php' => config_path('translation.php'),
+            __DIR__.'/config/ltrans.php' => config_path('ltrans.php'),
         ], 'ltrans');
         $this->setupRoutes($this->app->router);
     }
