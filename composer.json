@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "webtamizhan\\ltrans\\LtranslationServiceProvider.php"
+                "Webtamizhan\\Ltrans\\LtranslationServiceProvider"
             ]
         }
     }
