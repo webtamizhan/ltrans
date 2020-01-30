@@ -240,7 +240,7 @@
 <div class="container-fluid">
     <main role="main" class="pt-3">
         <div class="page-header mb-4">
-            <h1>Edit {{ $f }} of {{ $lang }}</h1>
+            <h1>Edit {{ $file }} of {{ $lang }}</h1>
         </div>
 
         <div class="row">
