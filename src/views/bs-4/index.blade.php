@@ -216,7 +216,7 @@
 <body>
 <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark p-0">
     <a href="{{ route('log-viewer::dashboard') }}" class="navbar-brand mr-0">
-        <i class="fa fa-fw fa-book"></i> Ltrans
+        <i class="fa fa-globe"></i> Ltrans
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -225,12 +225,12 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item {{ Route::is('log-viewer::dashboard') ? 'active' : '' }}">
                 <a href="{{ url('/') }}" class="nav-link">
-                    <i class="fa fa-dashboard"></i>Back to {{ config('app.name') }}
+                    <i class="fa fa-dashboard"></i>&nbsp;Back to {{ config('app.name') }}
                 </a>
             </li>
             <li class="nav-item {{ Route::is('translations') ? 'active' : '' }}">
                 <a href="{{ url('translations') }}" class="nav-link">
-                    <i class="fa fa-archive"></i> Ltrans
+                    <i class="fa fa-globe"></i> Ltrans
                 </a>
             </li>
         </ul>
@@ -244,10 +244,10 @@
         </div>
 
         <div class="row">
-            <div class="col-md-12 col-lg-3">
+            <div class="col-md-12">
                 <div class="box">
                     <div class="box-content">
-                        <a href="{{ url('translations/add') }}" class="btn btn-primary pull-right">Add New
+                        <a href="{{ url('translations/add') }}" class="btn btn-primary pull-right mb-2">Add New
                             Translation</a>
                         <br>
                         <table class="table table-striped">

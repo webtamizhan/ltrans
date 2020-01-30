@@ -216,7 +216,7 @@
 <body>
 <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark p-0">
     <a href="{{ route('log-viewer::dashboard') }}" class="navbar-brand mr-0">
-        <i class="fa fa-fw fa-book"></i> Ltrans
+        <i class="fa fa-globe"></i> Ltrans
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -225,12 +225,12 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item {{ Route::is('log-viewer::dashboard') ? 'active' : '' }}">
                 <a href="{{ url('/') }}" class="nav-link">
-                    <i class="fa fa-dashboard"></i>Back to {{ config('app.name') }}
+                    <i class="fa fa-dashboard"></i>&nbsp;Back to {{ config('app.name') }}
                 </a>
             </li>
             <li class="nav-item {{ Route::is('translations') ? 'active' : '' }}">
                 <a href="{{ url('translations') }}" class="nav-link">
-                    <i class="fa fa-archive"></i> Ltrans
+                    <i class="fa fa-globe"></i> Ltrans
                 </a>
             </li>
         </ul>
@@ -240,17 +240,18 @@
 <div class="container-fluid">
     <main role="main" class="pt-3">
         <div class="page-header mb-4">
-            <h1>Add New Translation</h1>
+            <h1>Edit {{ $f }} of {{ $lang }}</h1>
         </div>
 
         <div class="row">
-            <div class="col-md-12 col-lg-3">
-                <div class="box">
+            <div class="col-md-12">
+                <div class="box mb-5">
                     <div class="box-content">
                         <ul class="nav nav-tabs">
                             @foreach($files as $f)
-                                <li @if($file == $f) class="active" @endif >
-                                    <a href="{{ url('translations?edit='.$lang.'&file='.$f)}}">{{ $f }} </a>
+                                <li class="nav-item" >
+                                    <a class="nav-link @if($file == $f) active @endif" href="{{ url('translations?edit='
+                                    .$lang.'&file='.$f)}}">{{ $f }} </a>
                                 </li>
                             @endforeach
                         </ul>
