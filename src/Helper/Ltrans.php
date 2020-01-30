@@ -4,7 +4,7 @@ namespace Webtamizhan\Ltrans;
 
 class Ltrans{
 
-    function langOption()
+    public static function langOption()
     {
         $path = base_path() . '/resources/lang/';
         $lang = scandir($path);
