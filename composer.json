@@ -1,14 +1,12 @@
 {
     "name": "webtamizhan/ltrans",
     "description": "Manage translation on laravel application",
-    "type": "library",
-    "authors": [
-        {
-            "name": "Prabakaran T",
-            "email": "mailtodecipher@gmail.com"
-        }
+    "keywords": [
+        "translation",
+        "language",
+        "locale"
     ],
-    "minimum-stability": "dev",
+    "type": "library",
     "require": {
         "php": "^7.1"
     },
@@ -17,6 +15,14 @@
             "Webtamizhan\\Ltrans\\": "src/"
         }
     },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Prabakaran T",
+            "email": "mailtodecipher@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
