@@ -45,8 +45,6 @@
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- Authentication Links -->
-                    {!!  \Kalamsoft\Langman\Lman::TranslationSwitch() !!}
                 </ul>
             </div>
         </div>
